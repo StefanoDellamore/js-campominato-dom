@@ -1,5 +1,4 @@
 /* reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -8,4 +7,45 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* general */
+
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-main > .cell {
+    width: 10%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid purple;
+    background-color: rgb(255, 225, 0);
+    cursor: pointer;
+}
+
+.container-main > .cell.cell-100 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.container-main > .cell.cell-81 {
+    width: calc(1000px / 9);
+    height: calc(1000px / 9);
+    line-height: calc(1000px / 9);
+}
+
+.container-main > .cell.cell-49 {
+    width: calc(1000px / 7);
+    height: calc(1000px / 7);
+    line-height: calc(1000px / 7);
+}
+
+.container-main > .cell.active {
+    background-color: purple;
+    color: rgb(255, 225, 0);;
 }
