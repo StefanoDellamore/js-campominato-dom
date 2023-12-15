@@ -45,7 +45,12 @@ html {
     line-height: calc(1000px / 7);
 }
 
-.container-main > .cell.active {
-    background-color: purple;
-    color: rgb(255, 225, 0);;
+.container-main > .cell.clicked {
+    color: lightcoral;
+    background-color: aqua;
+}
+
+.container-main > .cell.bomb {
+    color: white;
+    background-color: red;
 }
